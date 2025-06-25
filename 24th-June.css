@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+}
+.logo p{
+    font-weight: bolder;
+    font-size: 19px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    transition: 0.5s;
+    color: white;
+    margin-right: 40px;
+}
+.active{
+    text-decoration: underline;
+    text-decoration-color: lightblue !important;
+    text-decoration-thickness: 5px;
+}
+nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(187, 187, 4);
+    text-decoration-thickness: 5px;
+}
+.auth button{
+    background-color: lightblue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    width: 100px;
+    box-shadow: 0 0 2px white;
+    margin-right: 20px;
+}
+.asecond{
+    display: none;
+}
+.auth button:hover{
+    background-color: rgb(187, 187, 4);
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.73);
+    width: 300px;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    line-height: 2;
+    margin: auto;
+    font-family: cursive;
+}
+form p{
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+
+
+}
+form .submit{
+    margin: auto;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+form .submit:hover{
+    background-color: green;
+    text-align: center;
+
+}
+.name{
+    display: none;
+}
+form .submit:focus{
+    background-color: rgb(2, 79, 2);
+}
+section{
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    display: flex;
+}
+
+/* Coming Soon Page */
+footer{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+}
+footer h2{
+    font-size: 90px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1107px) {
+    nav a{
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 1021px) {
+    .auth .afirst{
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 941px) {
+    .auth .afirst{
+        margin-right: 10px;
+    }
+    nav a{
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 847px) {
+    nav a{
+        padding: 5px;
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 787px) {
+    .afirst{
+        display: none;
+    }
+    .asecond{
+        display: block;
+    }
+    .logo p{
+        font-size: 17px;
+    }
+    nav a{
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width: 647px) {
+    .name{
+        display: block;
+    }
+    .active{
+        text-decoration-thickness: 3px;
+    }
+    nav a:hover{
+        text-decoration-thickness: 3px;
+    }
+}
+/* Coming Soon Page */
