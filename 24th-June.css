@@ -89,7 +89,7 @@ form p{
     margin: auto;
     border-radius: 20px;
 }
-form input{
+form input, .submit{
     width: 100%;
     height: 40px;
     border-radius: 10px;

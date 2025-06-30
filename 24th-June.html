@@ -27,22 +27,25 @@
     </header>
 
     <section>
-        <form>
+        <form id="order-form">
             <p>Order Now</p>
             <label for="fname">Full Name </label><br>
-            <input placeholder="Your Name..." type="text" name="fname" id="fname"><br>
+            <input placeholder="Your Name..." type="text" value="" name="fname" id="fname"><br>
             <label for="email">Email</label><br>
-            <input placeholder="example@mail.com" type="email" name="email" id="email"><br>
+            <input placeholder="example@mail.com" value="" type="email" name="email" id="email"><br>
             <label for="pnum">Phone Number </label><br>
-            <input placeholder="+23400000000" type="tel" name="pnum" id="pnum"><br>
+            <input placeholder="+23400000000" value="" type="tel" name="pnum" id="pnum"><br>
             <label for="prod">Product </label>
             <select name="prodl" id="prod">
                 <option value="Wafers Biscuit">Wafers Biscuit</option>
                 <option value="Stick Sweet">Stick Sweet</option>
                 <option value="vaseline">Vasline</option>
             </select><br>
+            <!-- <button  class="submit" onclick="submit()">Submit</button> -->
             <input type="submit" class="submit" value="Submit">
         </form>
     </section>
+
+    <script src="24th-June.js"></script>
 </body>
 </html>
